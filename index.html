@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cedust Industries</title>
-  <meta name="description" content="Browser games by Cedust Industries: Not So Idle Hero, Crucible, Emberheir and Exaltia.">
+  <meta name="description" content="Browser games by Cedust Industries: Not So Idle Hero, Crucible, Emberheir, Exaltia and Lord of Destruction.">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -69,6 +69,14 @@
     .game.exaltia   { --c: #d9b56f; }
     .game.idlehero  { --c: #7aa7e0; }
     .game.crucible  { --c: #e0743a; }
+    .game.lod       { --c: #c8414a; }
+    @media (min-width: 860px) {
+      .game:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc(50% - 12px);
+      }
+    }
 
     .logo {
       display: block;
@@ -88,6 +96,8 @@
     .game.idlehero .logo img { padding: 10%; }
     .game.crucible .logo  { background: radial-gradient(circle at 50% 40%, #3a2010, #120c09 70%); }
     .game.crucible .logo img { padding: 5% 0; }
+    .game.lod .logo { background: radial-gradient(circle at 50% 45%, #3b2330, #120b10 75%); }
+    .game.lod .logo img { padding: 6% 8%; }
 
     .body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; }
     h2 {
@@ -187,6 +197,21 @@
           <div class="actions">
             <a class="btn play" href="https://cedust.github.io/Exaltia/">Play now</a>
             <a class="btn code" href="https://github.com/Cedust/Exaltia">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game lod">
+        <a class="logo" href="https://cedust.github.io/LordOfDestruction/" aria-label="Play Lord of Destruction">
+          <img src="assets/lordofdestruction.png" alt="Lord of Destruction logo: a crowned dark knight above the title">
+        </a>
+        <div class="body">
+          <h2>Lord of Destruction</h2>
+          <p class="subtitle">Idle Auto-Battler</p>
+          <p class="desc">An idle auto-battler where you play the villain. Waves of heroes storm your throne room and break against your dark powers. When you fall, you rise again stronger – seal dark pacts, gather dread and shape a build that holds the throne ever longer.</p>
+          <div class="actions">
+            <a class="btn play" href="https://cedust.github.io/LordOfDestruction/">Play now</a>
+            <a class="btn code" href="https://github.com/Cedust/LordOfDestruction">Code</a>
           </div>
         </div>
       </article>
